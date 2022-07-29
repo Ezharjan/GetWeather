@@ -1,10 +1,5 @@
-.vscode
-.idea
+.idea/
 .vscode/
-node_modules
 node_modules/
-cache
 cache/
-temp
-pusher
-
+temp/
