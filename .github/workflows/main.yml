@@ -9,7 +9,7 @@ jobs:
       - name: 'Checkout codes'
         uses: actions/checkout@v1
       - name: 'Get Weather'
-        run: bash ./weather.sh
+        run: echo "$(curl https://wttr.in/Beijing?format=4&m)" >> result.html
       - name: 'Get Date'
         run: echo "REPORT_DATE=$(TZ=':Asia/Beijing' date '+%Y-%m-%d %T')" >> $GITHUB_ENV
       - name: 'Send mail'
